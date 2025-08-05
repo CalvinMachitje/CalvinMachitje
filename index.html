@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sello Calvin Machitje | CV Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>Calvin.sc</h1>
+      <p>Junior Full-Stack Dev & Penetration Tester</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item active"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html" class="nav-item"><i class="fas fa-user"></i><span>About</span></a>
+      <a href="projects.html" class="nav-item"><i class="fas fa-folder"></i><span>Projects</span></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="tel:+27742323043"><i class="fas fa-phone"></i> +27 74 232 3043</a>
+      <a href="tel:+27671004524"><i class="fas fa-phone"></i> +27 67 100 4524</a>
+      <a href="mailto:smachitje36@gmail.com"><i class="fas fa-envelope"></i> smachitje36@gmail.com</a>
+      <a href="Calvin%20CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/sello-machitje-5401a415a" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/CalvinMachitje" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <header class="header">
+      <div class="progress-bar"></div>
+    </header>
+    <section id="home" class="section active">
+      <div class="video-background">
+        <video autoplay muted loop id="bg-video" class="video-element">
+          <source src="backgraound3.mp4" type="video/mp4" />
+          <img src="../images/fallback.jpg" alt="Fallback Image" class="fallback-image" />
+        </video>
+        <div class="video-controls">
+          <button id="play-pause" class="btn-control"><i class="fas fa-play"></i><i class="fas fa-pause" style="display:none;"></i></button>
+        </div>
+      </div>
+      <div class="hero">
+        <img src="../images/myphoto.jpg" alt="Profile Image" class="hero-image" />
+        <div class="hero-text">
+          <h1>Sello Calvin Machitje</h1>
+          <p>Junior Full-Stack Developer & Web Applications Penetration Tester from South Africa</p>
+          <p>Building secure, innovative digital solutions with a passion for growth.</p>
+          <div class="hero-buttons">
+            <a href="about.html" class="btn">About Me</a>
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="Calvin%20CV.pdf" class="btn" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fas fa-code"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fas fa-cube"></i><span>C#</span></div>
+            <div class="skill-card"><i class="fas fa-code"></i><span>C++</span></div>
+          </div>
+          <div class="skill-category">
+            <h3>DBMS</h3>
+            <div class="skill-card"><i class="fas fa-database"></i><span>Oracle</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>SQLite</span></div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks</h3>
+            <div class="skill-card"><i class="fas fa-cogs"></i><span>Django</span></div>
+            <div class="skill-card"><i class="fas fa-flask"></i><span>Flask</span></div>
+          </div>
+          <div class="skill-category">
+            <h3>Cybersecurity</h3>
+            <div class="skill-card"><i class="fas fa-shield-alt"></i><span>Junior Penetration Testing</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    const video = document.getElementById('bg-video');
+    const playPauseBtn = document.getElementById('play-pause');
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.querySelector('.fa-play').style.display = 'none';
+        playPauseBtn.querySelector('.fa-pause').style.display = 'inline';
+      } else {
+        video.pause();
+        playPauseBtn.querySelector('.fa-play').style.display = 'inline';
+        playPauseBtn.querySelector('.fa-pause').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
