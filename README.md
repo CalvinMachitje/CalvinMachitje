@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Calvin Machitje</h1>
 <h3 align="center">A passionate full-stack and cyber-security enthusiast from South Africa</h3>
 
-- 🔭 I’m currently working on [clinic_project](https://github.com/CalvinMachitje/clinic_project.git)
+- 🔭 I’m currently working on [clinic_project](https://github.com/CalvinMachitje/Clinic-management-system.git)
 
 - 📫 How to reach me **smachitje36@gmail.com**
 
